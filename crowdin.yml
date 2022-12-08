@@ -1,0 +1,3 @@
+files:
+  - source: /zh-cn/quick-start/*
+    translation: /%locale%/quick-start/%original_file_name%
