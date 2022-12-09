@@ -135,7 +135,7 @@ server-choose:
 错误的物品 ID 会导致插件报错。
 {% endhint %}
 
-填入正确的显示物品。1.12 及以下的版本可以通过[此处](https://helpch.at/docs/1.12/org/bukkit/Material.html)查询，1.13 及以上版本通过[此处](https://helpch.at/docs/1.13/org/bukkit/Material.html)查询。
+填入正确的显示物品。1.12 及以下的版本可以通过[此处](https://helpch.at/docs/1.12/org/bukkit/Material.html)查询，1.13 及以上版本通过[此处](https://helpch.at/docs/1.19/org/bukkit/Material.html)查询。
 
 #### name
 
