@@ -117,37 +117,37 @@ server-choose:
 
 ```
 
-## 通用的物品表达方式
+## General item expression
 
-大多数的物品均包含以下元素。
+Most items contain the following elements.
 
 ### slot
 
 {% hint style="info" %}
-部分物品无需此选项，例如服务器图标。
+Some items do not require this option, such as server icons.
 {% endhint %}
 
-物品的槽位，将决定此物品放在什么位置。
+The item's slot will determine where the item is placed.
 
 ### item
 
 {% hint style="warning" %}
-错误的物品 ID 会导致插件报错。
+Wrong item ID will cause the plugin to report error.
 {% endhint %}
 
-填入正确的显示物品。1.12 及以下的版本可以通过[此处](https://helpch.at/docs/1.12/org/bukkit/Material.html)查询，1.13 及以上版本通过[此处](https://helpch.at/docs/1.19/org/bukkit/Material.html)查询。
+Fill in the correct display items. Versions 1.12 and below can be queried through [here](https://helpch.at/docs/1.12/org/bukkit/Material.html), and versions 1.13 and above can be queried through [here](https://helpch.at/docs/1.19/org/bukkit/Material.html).
 
 #### name
 
-物品的名称。
+The name of the item.
 
 ### lore
 
-物品的描述信息。
+The description information of the item.
 
 ## main-menu
 
-主菜单，是使用 `/queue <Group Name> gui` 打开的页面。它不包含子服务器的页面。
+The main menu is the page opened with `/queue <Group Name>gui`.It does not contain pages for subservers.
 
 ### rows
 
