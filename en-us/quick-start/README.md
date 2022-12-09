@@ -19,7 +19,7 @@ Keep your token properly. Your token may be disabled if abuse is detected.
 
 1. Put `BingQueue-{version}.jar` into the `plugins` folder.
 2. Run a server and close it.
-3. 在 `plugins` 文件夹中找到 `BingQueue` 文件夹。
+3. Find the `BingQueue` folder in the `plugins` folder.
 4. Fill in the `Token` sent to you in `Token` in `config.yml`.
 5. Enter your MySQL information in `config.yml`.
 6. Start the server, start using it!
