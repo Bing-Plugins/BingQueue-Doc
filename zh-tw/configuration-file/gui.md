@@ -1,7 +1,7 @@
 # Gui.yml
 
 {% hint style="success" %}
-This file is only visible on child servers
+此文件仅在子服务器可见
 {% endhint %}
 
 ```yaml

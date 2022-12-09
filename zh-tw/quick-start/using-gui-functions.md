@@ -4,10 +4,37 @@
 此功能需要子服务器也安装插件
 {% endhint %}
 
-| 命令                                 | 描述              |
-| ---------------------------------- | --------------- |
-| /queue \<Group Name> gui           | 向代理端发送打开 Gui 请求 |
-| /bingqueue:queue \<Group Name> gui | 向子服发送打开 Gui 请求  |
+<table spaces-before="0">
+  <tr>
+    <th>
+      命令
+    </th>
+    
+    <th>
+      描述
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      /queue \<Group Name> gui
+    </td>
+    
+    <td>
+      向代理端发送打开 Gui 请求
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      /bingqueue:queue \<Group Name> gui
+    </td>
+    
+    <td>
+      向子服发送打开 Gui 请求
+    </td>
+  </tr>
+</table>
 
 ## 先决条件
 
@@ -18,3 +45,4 @@
 Gui 的配置文件保存在了子服务器的文件夹中，以 `Gui.yml` 命名。
 
 你可以在本指南的配置文件部分查看。
+
