@@ -15,7 +15,7 @@ Token is required only if build version is used.
 Keep your token properly. Your token may be disabled if abuse is detected.
 {% endhint %}
 
-## Step 2: Fill in Profile
+## Step 2: Fill in Config
 
 1. Put `BingQueue-{version}.jar` into the `plugins` folder.
 2. Run a server and close it.
