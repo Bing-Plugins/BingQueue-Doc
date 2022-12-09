@@ -1,2 +1,2 @@
-# Other Commands
+# Other commands
 
