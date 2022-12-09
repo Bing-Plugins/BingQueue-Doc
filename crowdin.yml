@@ -1,0 +1,5 @@
+files:
+  - source: /zh-cn/quick-start/*
+    translation: /%locale%/quick-start/%original_file_name%
+  - source: /zh-cn/configuration-file/*
+    translation: /%locale%/configuration-file/%original_file_name%

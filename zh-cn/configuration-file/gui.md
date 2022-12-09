@@ -117,6 +117,34 @@ server-choose:
 
 ```
 
+## 通用的物品表达方式
+
+大多数的物品均包含以下元素。
+
+### slot
+
+{% hint style="info" %}
+部分物品无需此选项，例如服务器图标。
+{% endhint %}
+
+物品的槽位，将决定此物品放在什么位置。
+
+### item
+
+{% hint style="warning" %}
+错误的物品 ID 会导致插件报错。
+{% endhint %}
+
+填入正确的显示物品。1.12 及以下的版本可以通过[此处](https://helpch.at/docs/1.12/org/bukkit/Material.html)查询，1.13 及以上版本通过[此处](https://helpch.at/docs/1.19/org/bukkit/Material.html)查询。
+
+#### name
+
+物品的名称。
+
+### lore
+
+物品的描述信息。
+
 ## main-menu
 
 主菜单，是使用 `/queue <Group Name> gui` 打开的页面。它不包含子服务器的页面。
@@ -136,6 +164,18 @@ server-choose:
 ### server
 
 点击后跳转到服务器选择菜单 `server-choose`。
+
+### other
+
+额外的项目，支持自定义物品。
+
+#### console-command
+
+以控制台身份执行命令，支持占位符。
+
+#### player-command
+
+以玩家身份执行命令，支持占位符。
 
 ## server-choose
 
