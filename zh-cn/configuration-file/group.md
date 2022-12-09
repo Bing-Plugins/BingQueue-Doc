@@ -1,5 +1,9 @@
 # Group.yml
 
+{% hint style="success" %}
+此文件仅在代理端可见（BungeeCord / Velocity）
+{% endhint %}
+
 ```yaml
 # 组名称
 Lobby:
@@ -41,7 +45,7 @@ Lobby:
 
 匹配组的规则，它决定了此匹配组是如何工作的。它目前支持七种匹配方式。
 
-{% hint style="info" %}
+{% hint style="success" %}
 但他们遵循一个共同的原则：不会让玩家匹配不在线，或者已经满员的服务器。
 {% endhint %}
 
