@@ -124,7 +124,7 @@ Most items contain the following elements.
 ### slot
 
 {% hint style="info" %}
-Some items do not require this option, such as server icons.
+Some items do not require this option, such as server item.
 {% endhint %}
 
 The item's slot will determine where the item is placed.
@@ -155,50 +155,50 @@ Number of lines in menu. Please make sure other items do not exceed the line cou
 
 ### title
 
-菜单的标题，支持颜色与占位符。
+The title of the menu, supports color and placeholder.
 
 ### play
 
-效果与 `/queue <Group Name>` 相同，点击后执行匹配。
+The effect is the same as `/queue <Group Name>`, and the matching is performed after clicking.
 
 ### server
 
-点击后跳转到服务器选择菜单 `server-choose`。
+Click to jump to the server selection menu `server-choose`.
 
 ### other
 
-额外的项目，支持自定义物品。
+Extra items, support for custom items.
 
 #### console-command
 
-以控制台身份执行命令，支持占位符。
+Execute commands as console, support placeholders.
 
 #### player-command
 
-以玩家身份执行命令，支持占位符。
+Execute commands as a player, supports placeholders.
 
 ## server-choose
 
 {% hint style="success" %}
-此处仅包含与 `main-menu` 不重复的参数。
+Only parameters that do not duplicate `main-menu` are included here.
 {% endhint %}
 
 ### slots
 
-这是用于放置子服务器物品的槽位列表。子服务器图标将会依次填入其中的位置，超出的内容则需要翻页。
+This is a list of slots for subserver items. The sub-server icons will fill in the positions in turn, and the excess content needs to be turned.
 
 ### server
 
-可用且符合匹配条件的服务器，它支持使用占位符。
+Available and matching servers that support the use of placeholders.
 
 ### unavailable-server
 
-服务器可用，但不满足匹配条件。
+The server is available, but does not meet the matching rule.
 
 ### random
 
-随机进入一张地图的选项，不同于匹配规则，此处为真随机。
+The option to randomly enter a map is different from the matching rules, here it is true random.
 
 ### previous-page/next-page
 
-上一页与下一页的按钮，支持页码占位符。
+The buttons for the previous page and the next page support page number placeholders.
