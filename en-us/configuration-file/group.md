@@ -1,5 +1,9 @@
 # Group.yml
 
+{% hint style="success" %}
+此文件仅在代理端可见（BungeeCord / Velocity）
+{% endhint %}
+
 ```yaml
 # Group name
 Lobby:
@@ -41,7 +45,7 @@ The display name of the matching group.It corresponds to the `%group%` placehold
 
 Match group rule, it determines how this match group works. It currently supports seven matching methods.
 
-{% hint style="info" %}
+{% hint style="success" %}
 But they follow a common principle: they will not match players with offline or full servers.
 {% endhint %}
 
