@@ -39,7 +39,7 @@ Match group name. It corresponds to the `%queueName%` placeholder in `Gui.yml`
 
 ## displayName
 
-The display name of the matching group.It corresponds to the `%group%` placeholder in the language file and the `%queueDisplayName%` placeholder in `Gui.yml`.
+The display name of the server.Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
 
 ## rule
 
@@ -79,7 +79,7 @@ On the premise that the Motd match is passed, the server with the least number o
 
 On the premise that the Motd match is passed, randomly select a server that meets the requirements.
 
-It differs from `MOTD` in that Motd will prefer a server until it is filled.And this rule chooses a random server every time.
+It differs from `MOTD` in that Motd will prefer a server until it is filled.And this rule chooses a random server every time.And this rule chooses a random server every time.
 
 ### RANDOM
 
@@ -113,7 +113,7 @@ Here you need to fill in all the servers that can be matched by this matching gr
 
 ### displayName
 
-The display name of the server. Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
+The display name of the server. The display name of the matching group.It corresponds to the `%group%` placeholder in the language file and the `%queueDisplayName%` placeholder in `Gui.yml`.
 
 ### timeout
 
