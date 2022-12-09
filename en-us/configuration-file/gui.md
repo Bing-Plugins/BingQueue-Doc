@@ -151,7 +151,7 @@ The main menu is the page opened with `/queue <Group Name>gui`.It does not conta
 
 ### rows
 
-菜单的行数。请确保其他物品不超出行数。
+Number of lines in menu. Please make sure other items do not exceed the line count.
 
 ### title
 
