@@ -17,7 +17,7 @@ Keep your token properly. Your token may be disabled if abuse is detected.
 
 ## Step 2: Fill in Profile
 
-1. 将 `BingQueue-{version}.jar` 放入 `plugins` 文件夹。
+1. Put `BingQueue-{version}.jar` into the `plugins` folder.
 2. Run a server and close it.
 3. 在 `plugins` 文件夹中找到 `BingQueue` 文件夹。
 4. Fill in the `Token` sent to you in `Token` in `config.yml`.
