@@ -15,7 +15,7 @@
 
 * [Quick Start](en-us/quick-start/README.md)
   * [Create match group](en-us/quick-start/create-match-group.md)
-  * [using-gui-functions](en-us/quick-start/using-gui-functions.md)
+  * [Using gui functions](en-us/quick-start/using-gui-functions.md)
 * [Configuration File](en-us/configuration-file/README.md)
   * [Group.yml](en-us/configuration-file/group.md)
-  * [gui.yml](en-us/configuration-file/gui.md)
+  * [Gui.yml](en-us/configuration-file/gui.md)
