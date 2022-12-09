@@ -1,53 +1,53 @@
 # Group.yml
 
 ```yaml
-# 组名称
+# Group name
 Lobby:
-  # 组展示名称
+  # Group display name
   displayName: "&aLobby"
-  # 匹配规则
-  # MORE_ONLINE 更多玩家优先
-  # LESS_ONLINE 更少玩家优先
-  # MOTD 根据 MOTD 匹配
-  # MOTD_AND_MORE_ONLINE 根据 MOTD 匹配并人数最多优先
-  # MOTD_AND_LESS_ONLINE 根据 MOTD 匹配并人数最少优先
-  # MOTD_AND_RANDOM 根据 MOTD 匹配并随机选择
-  # RANDOM 随机选择可用服务器
+  # Match rule
+  # MORE_ONLINE
+  # LESS_ONLINE
+  # MOTD
+  # MOTD_AND_MORE_ONLINE
+  # MOTD_AND_LESS_ONLINE
+  # MOTD_AND_RANDOM
+  # RANDOM
   rule: "MORE_ONLINE"
   motd:
   - "Server Can Join"
-  # 延迟匹配上
+  # delay match
   delay: 0
-  # 发送不可用的服务器, 仅限 MOTD 模式
+  # send unavailable server, only MOTD mode
   show-unavailable-server: false
-  # 匹配池
+  # Match pool
   servers:
-    # 与代理端名称一致
+    # Same as the proxy name
     lobby_1:
-      # 展示名称
+      # Display name
       displayName: "&aLobby #1"
       timeout: 2000
 ```
 
 ## groupName
 
-匹配组的名称。它对应 `Gui.yml` 中的 `%queueName%` 占位符
+Match group name. It corresponds to the `%queueName%` placeholder in `Gui.yml`
 
 ## displayName
 
-匹配组的显示名称。它对应语言文件中的 `%group%` 占位符和 `Gui.yml` 中的 `%queueDisplayName%`占位符。
+The display name of the matching group.It corresponds to the `%group%` placeholder in the language file and the `%queueDisplayName%` placeholder in `Gui.yml`.
 
 ## rule
 
-匹配组的规则，它决定了此匹配组是如何工作的。它目前支持七种匹配方式。
+Match group rule, it determines how this match group works. It currently supports seven matching methods.
 
 {% hint style="info" %}
-但他们遵循一个共同的原则：不会让玩家匹配不在线，或者已经满员的服务器。
+But they follow a common principle: they will not match players with offline or full servers.
 {% endhint %}
 
 ### MORE\_ONLINE
 
-优先选择玩家数量最多的服务器，在线人数相同时随机选择其一。
+The server with the largest number of players is selected first, and one of them is randomly selected when there are the same number of players online.
 
 ### LESS\_ONLINE
 
