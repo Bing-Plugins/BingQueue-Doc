@@ -7,6 +7,8 @@
 * [快速开始](zh-cn/quick-start/README.md)
   * [新建匹配组](zh-cn/quick-start/Create-match-group.md)
   * [使用 GUI 功能](zh-cn/quick-start/using-gui-functions.md)
+* [其他命令](zh-cn/other-commands/README.md)
+  * [重载插件](zh-cn/other-commands/zhong-zai-cha-jian.md)
 * [配置文件](zh-cn/configuration-file/README.md)
   * [Group.yml](zh-cn/configuration-file/group.md)
   * [Gui.yml](zh-cn/configuration-file/gui.md)
