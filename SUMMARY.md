@@ -6,7 +6,9 @@
 
 * [快速开始](zh-cn/quick-start/README.md)
   * [新建匹配组](zh-cn/quick-start/Create-match-group.md)
-  * [使用 GUI 功能](zh-cn/quick-start/using-gui-functions.md)
+* [功能](zh-cn/function/README.md)
+  * [使用 GUI 功能](zh-cn/function/using-gui-functions.md)
+  * [使用匹配功能](zh-cn/function/use-the-matching-function.md)
 * [其他命令](zh-cn/other-commands/README.md)
   * [重载插件](zh-cn/other-commands/reload-plugin.md)
 * [配置文件](zh-cn/configuration-file/README.md)
