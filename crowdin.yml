@@ -3,3 +3,7 @@ files:
     translation: /%locale%/quick-start/%original_file_name%
   - source: /zh-cn/configuration-file/*
     translation: /%locale%/configuration-file/%original_file_name%
+  - source: /zh-cn/function/*
+    translation: /%locale%/function/%original_file_name%
+  - source: /zh-cn/other-commands/*
+    translation: /%locale%/other-commands/%original_file_name%
