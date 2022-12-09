@@ -133,3 +133,32 @@ server-choose:
 
 效果与 `/queue <Group Name>` 相同，点击后执行匹配。
 
+### server
+
+点击后跳转到服务器选择菜单 `server-choose`。
+
+## server-choose
+
+{% hint style="success" %}
+此处仅包含与 `main-menu` 不重复的参数。
+{% endhint %}
+
+### slots
+
+这是用于放置子服务器物品的槽位列表。子服务器图标将会依次填入其中的位置，超出的内容则需要翻页。
+
+### server
+
+可用且符合匹配条件的服务器，它支持使用占位符。
+
+### unavailable-server
+
+服务器可用，但不满足匹配条件。
+
+### random
+
+随机进入一张地图的选项，不同于匹配规则，此处为真随机。
+
+### previous-page/next-page
+
+上一页与下一页的按钮，支持页码占位符。
