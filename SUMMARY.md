@@ -13,3 +13,5 @@
 
 * [Quick Start](en-us/quick-start/README.md)
   * [Create match group](en-us/quick-start/create-match-group.md)
+* [Configuration File](en-us/configuration-file/README.md)
+  * [Group.yml](en-us/configuration-file/group.md)
