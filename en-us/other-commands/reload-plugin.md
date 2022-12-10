@@ -1,22 +1,22 @@
 # Reload Plugin
 
 {% hint style="success" %}
-执行这些命令需要权限：BingQueue.admin
+Permissions are required to execute these commands: BingQueue.admin
 {% endhint %}
 
-| Commands                    | Description    |
-| --------------------------- | -------------- |
-| /bingqueue reload           | 重载代理端配置文件      |
-| /bingqueue:bingqueue reload | 重载当前所在子服务器配置文件 |
+| Commands                    | Description                                     |
+| --------------------------- | ----------------------------------------------- |
+| /bingqueue reload           | Reload agent configuration file                 |
+| /bingqueue:bingqueue reload | Reload the current subserver configuration file |
 
 ## What can reload the command?
 
-它可以重载语言文件，但对于不同的服务端，也有不同的其他重载内容。
+It can overload language files, but for different servers, there are different other overloading contents.
 
 ### BungeeCord / Velocity
 
-* 重载 `Group.yml` 匹配组。
+* Overload `Group.yml` to match groups.
 
-### 子服务器
+### Subserver
 
-* 重载 `Gui.yml` Gui 配置文件。
+* Reload `Gui.yml` Gui config file.
