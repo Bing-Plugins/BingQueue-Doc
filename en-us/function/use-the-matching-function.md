@@ -1,13 +1,13 @@
-# 使用匹配功能
+# Use the matching function
 
 <table spaces-before="0">
   <tr>
     <th>
-      命令
+      Command
     </th>
     
     <th>
-      描述
+      Description
     </th>
   </tr>
   
@@ -17,13 +17,13 @@
     </td>
     
     <td>
-      使用匹配服务器
+      Use the matching server
     </td>
   </tr>
 </table>
 
-## 如何使用匹配功能
+## How to use the matching function
 
-执行上面的命令即可。组名称在 `BungeeCord/Velocity` 的 `Group.yml` 中。
+Just execute the above command. Group names are in `Group.yml` in `BungeeCord/Velocity`.
 
 ##

@@ -1,15 +1,15 @@
 # New Match Group
 
-## 匹配组
+## Match Group
 
-匹配组是 BingQueue 最重要的组成部分，它储存了每种匹配的各种信息，他们编辑起来非常方便。
+Match group is the most important part of BingQueue, it stores various information of each match, and they are very convenient to edit.
 
-### 匹配组是如何储存的？
+### How are match groups stored?
 
-它储存在 BungeeCord/Velocity 的 BingQueue 文件夹的 `Group.yml` 文件中。
+It is stored in the `Group.yml` file in the BingQueue folder of BungeeCord/Velocity.
 
-子服务器中不存储任何的匹配组信息。
+No matching group information is stored in the child server.
 
-### 匹配组有哪些工作方式？
+### How do match groups work?
 
-你可以在本指南的`配置文件` - `Group.yml` 中查看。
+You can check it in `Configuration File` - `Group.yml` in this guide.

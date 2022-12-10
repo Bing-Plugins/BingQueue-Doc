@@ -1,7 +1,7 @@
 # Group.yml
 
 {% hint style="success" %}
-此文件仅在代理端可见（BungeeCord / Velocity）
+This file is only visible on proxy (BungeeCord / Velocity)
 {% endhint %}
 
 ```yaml
