@@ -1,17 +1,17 @@
-# 使用 GUI 功能
+# Using GUI functions
 
 {% hint style="info" %}
-此功能需要子服务器也安装插件
+This feature requires the subserver to also have the plugin installed
 {% endhint %}
 
 <table spaces-before="0">
   <tr>
     <th>
-      命令
+      Command
     </th>
     
     <th>
-      描述
+      Description
     </th>
   </tr>
   
@@ -21,7 +21,7 @@
     </td>
     
     <td>
-      向代理端发送打开 Gui 请求
+      Send an Open Gui request to the agent
     </td>
   </tr>
   
@@ -31,17 +31,17 @@
     </td>
     
     <td>
-      向子服发送打开 Gui 请求
+      Send open Gui request to child server
     </td>
   </tr>
 </table>
 
-## 先决条件
+## Prerequisites
 
-如果你希望使用此功能，请确保需要使用菜单的服务器已经安装了 BingQueue。否则会出现执行命令后什么都没有发生的情况。
+If you want to use this feature, please make sure that the server that needs to use the menu has BingQueue installed. Otherwise, nothing happens after the command is executed.
 
-## 如何修改 Gui
+## How to modify Gui
 
-Gui 的配置文件保存在了子服务器的文件夹中，以 `Gui.yml` 命名。
+Gui configuration files are stored in subserver folders named `Gui.yml`.
 
-你可以在本指南的配置文件部分查看。
+You can check it out in the configuration files section of this guide.
