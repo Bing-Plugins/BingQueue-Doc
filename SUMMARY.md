@@ -19,7 +19,9 @@
 
 * [Quick Start](en-us/quick-start/README.md)
   * [Create match group](en-us/quick-start/create-match-group.md)
-  * [Using gui functions](en-us/quick-start/using-gui-functions.md)
+* [Function](en-us/function/README.md)
+  * [Using gui functions](en-us/function/using-gui-functions.md)
+  * [Use matching function](en-us/function/use-the-matching-function.md)
 * [Other Commands](en-us/other-commands/README.md)
   * [Reload plugin](en-us/other-commands/reload-plugin.md)
 * [Configuration File](en-us/configuration-file/README.md)
