@@ -119,7 +119,7 @@ Lobby:
 
 这里需要填写此匹配组能够匹配到的所有服务器。这里面的服务器名称为你的 BungeeCord/Velocity 中的服务器名称，而不是 IP 地址和端口。
 
-### displayName
+### display-name
 
 服务器的显示名称。对应语言文件中的 `%server%` 和 `Gui.yml` 中的 `%serverDisplayName%`。
 
