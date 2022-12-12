@@ -5,39 +5,41 @@ This file is only visible on proxy (BungeeCord / Velocity)
 {% endhint %}
 
 ```yaml
-# Group name
+# group name
 Lobby:
-  # Group display name
-  displayName: "&aLobby"
-  # Match rule
+  # group display name
+  display-name: "&aLobby"
+  # matching rules
   # MORE_ONLINE
   # LESS_ONLINE
-  # MOTD
-  # MOTD_AND_MORE_ONLINE
-  # MOTD_AND_LESS_ONLINE
-  # MOTD_AND_RANDOM
+  # MOTD MOTD
+  # MOTD_AND_MORE_ONLINE MOTD
+  # MOTD_AND_LESS_ONLINE MOTD
+  # MOTD_AND_RANDOM MOTD
   # RANDOM
   rule: "MORE_ONLINE"
   motd:
   - "Server Can Join"
-  # delay match
+  # delayed match on
   delay: 0
-  # send unavailable server, only MOTD mode
-  show-unavailable-server: false
-  # Match pool
+  # MATCH Only include servers that are online and match the criteria (default)
+  # ONLINE Contains all online servers
+  # OFFLINE Contains all servers in the matchmaking pool
+  gui-show-level: MATCH
+  # match pool
   servers:
-    # Same as the proxy name
+    # Same as the agent name
     lobby_1:
-      # Display name
-      displayName: "&aLobby #1"
+      # display name
+      display-name: "&aLobby #1"
       timeout: 2000
 ```
 
-## groupName
+## Group name
 
 Match group name. It corresponds to the `%queueName%` placeholder in `Gui.yml`
 
-## displayName
+## display-name
 
 The display name of the server.Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
 
@@ -97,21 +99,27 @@ This option can be filled in more than one MOTD, only one MOTD needs to be met.
 
 Artificial delays. Most matching operations take only a few milliseconds to complete. Some people hope that the matching time will not be too short, you can modify this value, the unit is second.
 
-## show-unavailable-server
+## gui-show-level
 
-{% hint style="info" %}
-This option is only required for `MOTD`, `MOTD_AND_MORE_ONLINE`, `MOTD_AND_LESS_ONLINE`, `MOTD_AND_RANDOM` rules.
-{% endhint %}
+Select the level displayed in the Gui, and the server will only be displayed in the Gui after meeting the specified level conditions.Items to configure each level of server are in `Gui.yml`.
 
-By default, subservers that do not have Motd matches are not displayed in the Gui menu for subservers.
+### MATCH
 
-You can modify this option so that non-compliant servers are also displayed in the Gui menu.
+Only include servers that are online and match the criteria (default)
+
+### ONLINE
+
+Contains all online servers
+
+### OFFLINE
+
+Contains all servers in the matchmaking pool
 
 ## servers
 
 Here you need to fill in all the servers that can be matched by this matching group. The server name is the server name in your BungeeCord/Velocity, not the IP address and port.
 
-### displayName
+### display-name
 
 The display name of the server. The display name of the matching group.It corresponds to the `%group%` placeholder in the language file and the `%queueDisplayName%` placeholder in `Gui.yml`.
 
