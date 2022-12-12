@@ -5,32 +5,32 @@ This file is only visible on proxy (BungeeCord / Velocity)
 {% endhint %}
 
 ```yaml
-# 组名称
+# group name
 Lobby:
-  # 组展示名称
+  # group display name
   display-name: "&aLobby"
-  # 匹配规则
-  # MORE_ONLINE 更多玩家优先
-  # LESS_ONLINE 更少玩家优先
-  # MOTD 根据 MOTD 匹配
-  # MOTD_AND_MORE_ONLINE 根据 MOTD 匹配并人数最多优先
-  # MOTD_AND_LESS_ONLINE 根据 MOTD 匹配并人数最少优先
-  # MOTD_AND_RANDOM 根据 MOTD 匹配并随机选择
-  # RANDOM 随机选择可用服务器
+  # matching rules
+  # MORE_ONLINE
+  # LESS_ONLINE
+  # MOTD MOTD
+  # MOTD_AND_MORE_ONLINE MOTD
+  # MOTD_AND_LESS_ONLINE MOTD
+  # MOTD_AND_RANDOM MOTD
+  # RANDOM
   rule: "MORE_ONLINE"
   motd:
   - "Server Can Join"
-  # 延迟匹配上
+  # delayed match on
   delay: 0
-  # MATCH 仅包含在线且符合匹配条件的服务器（默认）
-  # ONLINE 包含所有在线的服务器
-  # OFFLINE 包含所有匹配池中的服务器
+  # MATCH Only include servers that are online and match the criteria (default)
+  # ONLINE Contains all online servers
+  # OFFLINE Contains all servers in the matchmaking pool
   gui-show-level: MATCH
-  # 匹配池
+  # match pool
   servers:
-    # 与代理端名称一致
+    # Same as the agent name
     lobby_1:
-      # 展示名称
+      # display name
       display-name: "&aLobby #1"
       timeout: 2000
 ```
@@ -101,19 +101,19 @@ Artificial delays. Most matching operations take only a few milliseconds to comp
 
 ## gui-show-level
 
-选择 Gui 中显示的等级，服务器满足指定等级条件后才会显示在 Gui 中。配置每种等级服务器的物品在 `Gui.yml` 中。
+Select the level displayed in the Gui, and the server will only be displayed in the Gui after meeting the specified level conditions.Items to configure each level of server are in `Gui.yml`.
 
 ### MATCH
 
-仅包含在线且符合匹配条件的服务器（默认）
+Only include servers that are online and match the criteria (default)
 
 ### ONLINE
 
-包含所有在线的服务器
+Contains all online servers
 
 ### OFFLINE
 
-包含所有匹配池中的服务器
+Contains all servers in the matchmaking pool
 
 ## servers
 
