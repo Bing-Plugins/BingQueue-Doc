@@ -5,39 +5,41 @@ This file is only visible on proxy (BungeeCord / Velocity)
 {% endhint %}
 
 ```yaml
-# Group name
+# 组名称
 Lobby:
-  # Group display name
-  displayName: "&aLobby"
-  # Match rule
-  # MORE_ONLINE
-  # LESS_ONLINE
-  # MOTD
-  # MOTD_AND_MORE_ONLINE
-  # MOTD_AND_LESS_ONLINE
-  # MOTD_AND_RANDOM
-  # RANDOM
+  # 组展示名称
+  display-name: "&aLobby"
+  # 匹配规则
+  # MORE_ONLINE 更多玩家优先
+  # LESS_ONLINE 更少玩家优先
+  # MOTD 根据 MOTD 匹配
+  # MOTD_AND_MORE_ONLINE 根据 MOTD 匹配并人数最多优先
+  # MOTD_AND_LESS_ONLINE 根据 MOTD 匹配并人数最少优先
+  # MOTD_AND_RANDOM 根据 MOTD 匹配并随机选择
+  # RANDOM 随机选择可用服务器
   rule: "MORE_ONLINE"
   motd:
   - "Server Can Join"
-  # delay match
+  # 延迟匹配上
   delay: 0
-  # send unavailable server, only MOTD mode
-  show-unavailable-server: false
-  # Match pool
+  # MATCH 仅包含在线且符合匹配条件的服务器（默认）
+  # ONLINE 包含所有在线的服务器
+  # OFFLINE 包含所有匹配池中的服务器
+  gui-show-level: MATCH
+  # 匹配池
   servers:
-    # Same as the proxy name
+    # 与代理端名称一致
     lobby_1:
-      # Display name
-      displayName: "&aLobby #1"
+      # 展示名称
+      display-name: "&aLobby #1"
       timeout: 2000
 ```
 
-## groupName
+## Group name
 
 Match group name. It corresponds to the `%queueName%` placeholder in `Gui.yml`
 
-## displayName
+## display-name
 
 The display name of the server.Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
 
@@ -97,21 +99,27 @@ This option can be filled in more than one MOTD, only one MOTD needs to be met.
 
 Artificial delays. Most matching operations take only a few milliseconds to complete. Some people hope that the matching time will not be too short, you can modify this value, the unit is second.
 
-## show-unavailable-server
+## gui-show-level
 
-{% hint style="info" %}
-This option is only required for `MOTD`, `MOTD_AND_MORE_ONLINE`, `MOTD_AND_LESS_ONLINE`, `MOTD_AND_RANDOM` rules.
-{% endhint %}
+选择 Gui 中显示的等级，服务器满足指定等级条件后才会显示在 Gui 中。配置每种等级服务器的物品在 `Gui.yml` 中。
 
-By default, subservers that do not have Motd matches are not displayed in the Gui menu for subservers.
+### MATCH
 
-You can modify this option so that non-compliant servers are also displayed in the Gui menu.
+仅包含在线且符合匹配条件的服务器（默认）
+
+### ONLINE
+
+包含所有在线的服务器
+
+### OFFLINE
+
+包含所有匹配池中的服务器
 
 ## servers
 
 Here you need to fill in all the servers that can be matched by this matching group. The server name is the server name in your BungeeCord/Velocity, not the IP address and port.
 
-### displayName
+### display-name
 
 The display name of the server. The display name of the matching group.It corresponds to the `%group%` placeholder in the language file and the `%queueDisplayName%` placeholder in `Gui.yml`.
 
