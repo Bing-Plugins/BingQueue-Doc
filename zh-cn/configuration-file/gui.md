@@ -61,7 +61,7 @@ server-choose:
   #%serverMotd% - MOTD of the server
   #%serverPlayerNum% - Now players number of the server
   #%serverMaxPlayerNum% - Max players number of the server
-  server:
+  match-server:
     item: MAP
     name: "&a%serverDisplayName%"
     lore: |-
@@ -71,7 +71,7 @@ server-choose:
       &7Current Status: &a%serverMotd%
       &7
       &eClick to Play
-  unavailable-server:
+  online-server:
     item: PAPER
     name: "&a%serverDisplayName%"
     lore: |-
@@ -81,6 +81,13 @@ server-choose:
       &7Current Status: &a%serverMotd%
       &7
       &eClick to Play
+  offline-server:
+    item: REDSTONE
+    name: "&a%serverDisplayName%"
+    lore: |-
+      &8%queueDisplayName%
+      &7
+      &7Current Status: &cOffline
   random:
     slot: 40
     item: FIREWORK_ROCKET
@@ -187,13 +194,17 @@ server-choose:
 
 这是用于放置子服务器物品的槽位列表。子服务器图标将会依次填入其中的位置，超出的内容则需要翻页。
 
-### server
+### match-server
 
 可用且符合匹配条件的服务器，它支持使用占位符。
 
-### unavailable-server
+### online-server
 
-服务器可用，但不满足匹配条件。
+服务器可用，但不满足匹配条件，它支持使用占位符。
+
+#### offline-server
+
+离线服务器，它支持使用占位符。
 
 ### random
 

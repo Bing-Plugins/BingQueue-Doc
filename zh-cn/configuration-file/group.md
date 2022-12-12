@@ -8,7 +8,7 @@
 # 组名称
 Lobby:
   # 组展示名称
-  displayName: "&aLobby"
+  display-name: "&aLobby"
   # 匹配规则
   # MORE_ONLINE 更多玩家优先
   # LESS_ONLINE 更少玩家优先
@@ -22,22 +22,24 @@ Lobby:
   - "Server Can Join"
   # 延迟匹配上
   delay: 0
-  # 发送不可用的服务器, 仅限 MOTD 模式
-  show-unavailable-server: false
+  # MATCH 仅包含在线且符合匹配条件的服务器（默认）
+  # ONLINE 包含所有在线的服务器
+  # OFFLINE 包含所有匹配池中的服务器
+  gui-show-level: MATCH
   # 匹配池
   servers:
     # 与代理端名称一致
     lobby_1:
       # 展示名称
-      displayName: "&aLobby #1"
+      display-name: "&aLobby #1"
       timeout: 2000
 ```
 
-## groupName
+## Group name
 
 匹配组的名称。它对应 `Gui.yml` 中的 `%queueName%` 占位符
 
-## displayName
+## display-name
 
 匹配组的显示名称。它对应语言文件中的 `%group%` 占位符和 `Gui.yml` 中的 `%queueDisplayName%`占位符。
 
@@ -97,15 +99,21 @@ Lobby:
 
 人工延迟。匹配的操作大多数只需要几毫秒就可以完成。有的人希望让这个匹配时间不要太短，你可以修改此值，单位为秒。
 
-## show-unavailable-server
+## gui-show-level
 
-{% hint style="info" %}
-此选项仅限 `MOTD`、`MOTD_AND_MORE_ONLINE`、`MOTD_AND_LESS_ONLINE`、`MOTD_AND_RANDOM` 规则才需要进行填写。
-{% endhint %}
+选择 Gui 中显示的等级，服务器满足指定等级条件后才会显示在 Gui 中。配置每种等级服务器的物品在 `Gui.yml` 中。
 
-默认情况下，子服务器的 Gui 菜单里是不会显示 Motd 不匹配的服务器。
+### MATCH
 
-你可以通过修改此选项，让不符的服务器也显示在 Gui 菜单中。
+仅包含在线且符合匹配条件的服务器（默认）
+
+### ONLINE
+
+包含所有在线的服务器
+
+### OFFLINE
+
+包含所有匹配池中的服务器
 
 ## servers
 
