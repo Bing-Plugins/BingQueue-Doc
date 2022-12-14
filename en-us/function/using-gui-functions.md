@@ -1,13 +1,40 @@
-# Using gui functions
+# Using GUI functions
 
 {% hint style="info" %}
 This feature requires the subserver to also have the plugin installed
 {% endhint %}
 
-| Command                            | Description                           |
-| ---------------------------------- | ------------------------------------- |
-| /queue \<Group Name> gui           | Send an Open Gui request to the agent |
-| /bingqueue:queue \<Group Name> gui | Send open Gui request to child server |
+<table spaces-before="0">
+  <tr>
+    <th>
+      Command
+    </th>
+    
+    <th>
+      Description
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      /queue \<Group Name> gui
+    </td>
+    
+    <td>
+      Send an Open Gui request to the agent
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      /bingqueue:queue \<Group Name> gui
+    </td>
+    
+    <td>
+      Send open Gui request to child server
+    </td>
+  </tr>
+</table>
 
 ## Prerequisites
 
