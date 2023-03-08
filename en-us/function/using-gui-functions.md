@@ -34,6 +34,26 @@ This feature requires the subserver to also have the plugin installed
       Send open Gui request to child server
     </td>
   </tr>
+  
+  <tr>
+    <td>
+      /queue \<Group Name> server-gui
+    </td>
+    
+    <td>
+      向代理端发送打开地图选择器 Gui 请求
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      /bingqueue:queue \<Group Name> server-gui
+    </td>
+    
+    <td>
+      向子服发送打开地图选择器 Gui 请求
+    </td>
+  </tr>
 </table>
 
 ## Prerequisites
