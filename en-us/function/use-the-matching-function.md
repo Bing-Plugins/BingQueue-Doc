@@ -1,26 +1,8 @@
-# Use the matching function
+# Use matching function
 
-<table spaces-before="0">
-  <tr>
-    <th>
-      Command
-    </th>
-    
-    <th>
-      Description
-    </th>
-  </tr>
-  
-  <tr>
-    <td>
-      /queue \<Group Name>
-    </td>
-    
-    <td>
-      Use the matching server
-    </td>
-  </tr>
-</table>
+| Command              | Description             |
+| -------------------- | ----------------------- |
+| /queue \<Group Name> | Use the matching server |
 
 ## How to use the matching function
 
