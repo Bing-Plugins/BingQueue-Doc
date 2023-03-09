@@ -62,6 +62,8 @@ If you want to use this feature, please make sure that the server that needs to 
 
 ## How to modify Gui
 
-Gui configuration files are stored in subserver folders named `Gui.yml`.
+~~【在 3.0 版本中移除】Gui 的配置文件保存在了子服务器的文件夹中，以 `Gui.yml` 命名。~~
 
-You can check it out in the configuration files section of this guide.
+~~你可以在本指南的配置文件部分查看。~~
+
+主菜单保存在 main-gui 文件夹中，默认名称为 main.yml。地图选择器保存在 area-gui 文件夹中，默认名称为 area.yml。
