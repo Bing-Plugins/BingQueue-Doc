@@ -4,10 +4,12 @@
 此功能需要子服务器也安装插件
 {% endhint %}
 
-| 命令                                 | 描述              |
-| ---------------------------------- | --------------- |
-| /queue \<Group Name> gui           | 向代理端发送打开 Gui 请求 |
-| /bingqueue:queue \<Group Name> gui | 向子服发送打开 Gui 请求  |
+| 命令                                        | 描述                   |
+| ----------------------------------------- | -------------------- |
+| /queue \<Group Name> gui                  | 向代理端发送打开 Gui 请求      |
+| /bingqueue:queue \<Group Name> gui        | 向子服发送打开 Gui 请求       |
+| /queue \<Group Name> server-gui           | 向代理端发送打开地图选择器 Gui 请求 |
+| /bingqueue:queue \<Group Name> server-gui | 向子服发送打开地图选择器 Gui 请求  |
 
 ## 先决条件
 
