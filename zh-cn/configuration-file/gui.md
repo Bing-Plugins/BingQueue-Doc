@@ -5,116 +5,42 @@
 {% endhint %}
 
 ```yaml
-#Main Menu
-main-menu:
-  rows: 4
-  #%queueName% - Raw queue name
-  #%queueDisplayName% - Display name of the queue
-  title: "Play%queueDisplayName%"
-  play:
-    slot: 12
-    item: RED_BED
-    name: "&a%queueDisplayName%"
-    lore: |-
-      &7Play%queueDisplayName%
-      &7
-      &7
-      &eClick to start playing
-  server:
-    slot: 14
-    item: OAK_SIGN
-    name: "&aMap Selector"
-    lore: |-
-      &7Choose a map to play in the map selector
-      &7
-      &eClick to view
-  other: {}
-server-choose:
-  rows: 6
-  slots:
-    - 10
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 19
-    - 20
-    - 21
-    - 22
-    - 23
-    - 24
-    - 25
-    - 28
-    - 29
-    - 30
-    - 31
-    - 32
-    - 33
-    - 34
-  #%queueName% - Raw queue name
-  #%queueDisplayName% - Display name of the queue
-  title: "%queueDisplayName%"
-  #%serverName% - Raw server name
-  #%serverDisplayName% - Display name of the server
-  #%serverMotd% - MOTD of the server
-  #%serverPlayerNum% - Now players number of the server
-  #%serverMaxPlayerNum% - Max players number of the server
-  server:
-    item: MAP
-    name: "&a%serverDisplayName%"
-    lore: |-
-      &8%queueDisplayName%
-      &7
-      &7Current Player: &a%serverPlayerNum%&7 / &a%serverMaxPlayerNum%
-      &7Current Status: &a%serverMotd%
-      &7
-      &eClick to Play
-  unavailable-server:
-    item: PAPER
-    name: "&a%serverDisplayName%"
-    lore: |-
-      &8%queueDisplayName%
-      &7
-      &7Current Player: &a%serverPlayerNum%&7 / &a%serverMaxPlayerNum%
-      &7Current Status: &a%serverMotd%
-      &7
-      &eClick to Play
-  random:
-    slot: 40
-    item: FIREWORK_ROCKET
-    name: "&aRandom Map"
-    lore: |-
-      &8%queueDisplayName%
-      &7
-      &aClick to play
-  #%previousPageNum% - Previous page number
-  #%nowPageNum% - Now page number
-  #%nextPageNum% - Next page number
-  previous-page:
-    slot: 18
-    item: ARROW
-    name: "&aPrevious page"
-    lore: |-
-      &7Page Number: %previous-page%
-  next-page:
-    slot: 26
-    item: ARROW
-    name: "&aNext page"
-    lore: |-
-      &7Page Number: %next-page%
-  other:
-    back:
-      slot: 49
-      item: ARROW
-      name: "&aReturn"
-      lore: |-
-        &7Return %queueDisplayName%
-      console-command: [ ]
-      player-command:
-        - queue %queueName% gui
+marks:
+  - "         "
+  - " 1111111 "
+  - " 1111111 "
+  - " 1111111 "
+  - "         "
+  - "         "
 
+match-server:
+  item: MAP
+
+online-server:
+  item: PAPER
+
+offline-server:
+  item: REDSTONE
+
+random:
+  slot: 40
+  item: FIREWORK_ROCKET
+
+previous-page:
+  slot: 18
+  item: ARROW
+
+next-page:
+  slot: 26
+  item: ARROW
+
+other:
+  back:
+    slot: 49
+    item: ARROW
+    console-command: []
+    player-command:
+      - queue %queueName% gui
 ```
 
 ## 通用的物品表达方式
@@ -187,13 +113,17 @@ server-choose:
 
 这是用于放置子服务器物品的槽位列表。子服务器图标将会依次填入其中的位置，超出的内容则需要翻页。
 
-### server
+### match-server
 
 可用且符合匹配条件的服务器，它支持使用占位符。
 
-### unavailable-server
+### online-server
 
-服务器可用，但不满足匹配条件。
+服务器可用，但不满足匹配条件，它支持使用占位符。
+
+#### offline-server
+
+离线服务器，它支持使用占位符。
 
 ### random
 
