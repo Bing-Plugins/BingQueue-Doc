@@ -1,5 +1,9 @@
 # Quick Start
 
+{% hint style="danger" %}
+中文指南已经过时，前往 [https://bingtang.feishu.cn/wiki/CIeqwf1adiL0CukoNPrcBWAHnrf](https://bingtang.feishu.cn/wiki/CIeqwf1adiL0CukoNPrcBWAHnrf)
+{% endhint %}
+
 ## Step 1: Get Token
 
 {% hint style="success" %}
