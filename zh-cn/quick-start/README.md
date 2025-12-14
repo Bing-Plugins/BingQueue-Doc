@@ -1,5 +1,9 @@
 # 快速开始
 
+{% hint style="danger" %}
+中文指南已经过时，前往 [https://bingtang.feishu.cn/wiki/CIeqwf1adiL0CukoNPrcBWAHnrf](https://bingtang.feishu.cn/wiki/CIeqwf1adiL0CukoNPrcBWAHnrf)
+{% endhint %}
+
 ## 第一步：获取 Token
 
 {% hint style="success" %}
