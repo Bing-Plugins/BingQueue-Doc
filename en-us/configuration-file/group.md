@@ -41,7 +41,7 @@ Match group name. It corresponds to the `%queueName%` placeholder in `Gui.yml`
 
 ## display-name
 
-The display name of the server.Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
+The display name of the server. Corresponds to `%server%` in the language file and `%serverDisplayName%` in `Gui.yml`.
 
 ## rule
 
@@ -81,7 +81,7 @@ On the premise that the Motd match is passed, the server with the least number o
 
 On the premise that the Motd match is passed, randomly select a server that meets the requirements.
 
-It differs from `MOTD` in that Motd will prefer a server until it is filled.And this rule chooses a random server every time.And this rule chooses a random server every time.
+It differs from `MOTD` in that Motd will prefer a server until it is filled.And this rule chooses a random server every time. And this rule chooses a random server every time.
 
 ### RANDOM
 
@@ -101,7 +101,7 @@ Artificial delays. Most matching operations take only a few milliseconds to comp
 
 ## gui-show-level
 
-Select the level displayed in the Gui, and the server will only be displayed in the Gui after meeting the specified level conditions.Items to configure each level of server are in `Gui.yml`.
+Select the level displayed in the Gui, and the server will only be displayed in the Gui after meeting the specified level conditions. Items to configure each level of server are in `Gui.yml`.
 
 ### MATCH
 
