@@ -73,7 +73,7 @@ The description information of the item.
 
 ## main-menu
 
-The main menu is the page opened with `/queue <Group Name>gui`.It does not contain pages for subservers.
+The main menu is the page opened with `/queue <Group Name>gui`. It does not contain pages for subservers.
 
 ### rows
 
