@@ -7,7 +7,7 @@
 ## Step 1: Get Token
 
 {% hint style="success" %}
-If you buy a plugin from SpecotMC or BuiltByBit(MC-Market), you can skip this step.\
+If you buy a plugin from SpecotMC or BuiltByBit(MC-Market), you can skip this step. \
 Token is required only if build version is used.
 {% endhint %}
 
